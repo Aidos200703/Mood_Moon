@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/home.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    
+
+    <title>Mood Moon</title>
+  <link rel="icon" href="http://127.0.0.1:5500/assets/imgs/logo.svg"><link rel="stylesheet" href="./Mood Moon_files/home_style.css"></head>
+  <body>
+    <header>
+      <div class="content">
+        <div class="header_top">
+          <div class="logo">
+            <a href="http://127.0.0.1:5500/home.html#header" class="logo_text">MOOD<span class="special_word">MOON</span></a>
+          </div>
+          <button class="btn_menu">Меню</button>
+          <div class="menu">
+            <div class="left_menu">
+              <nav>
+                <ul>
+                  <li><a href="http://127.0.0.1:5500/home.html#">ПРОЕКТЫ</a></li>
+                  <li><a href="http://127.0.0.1:5500/home.html#">ПРАЙС ЛИСТ</a></li>
+                  <li><a href="http://127.0.0.1:5500/home.html#">СОТРУДНИЧЕСТВО</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right_menu">
+              <nav>
+                <ul>
+                  <li><a href="http://127.0.0.1:5500/home.html#">О НАС</a></li>
+                  <li><a href="http://127.0.0.1:5500/home.html#">КОНТАКТЫ</a></li>
+                  <li><a href="http://127.0.0.1:5500/home.html#">ЯЗЫКИ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu_on_mobile">
+          <div class="menu_overlay"></div>
+          <div class="menu_content">
+            <ul>
+              <li><a href="http://127.0.0.1:5500/home.html#">ПРОЕКТЫ</a></li>
+              <li><a href="http://127.0.0.1:5500/home.html#">ПРАЙС ЛИСТ</a></li>
+              <li><a href="http://127.0.0.1:5500/home.html#">СОТРУДНИЧЕСТВО</a></li>
+              <li><a href="http://127.0.0.1:5500/home.html#">О НАС</a></li>
+              <li><a href="http://127.0.0.1:5500/home.html#">КОНТАКТЫ</a></li>
+              <li><a href="http://127.0.0.1:5500/home.html#">ЯЗЫКИ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="left_hero">
+          <h1 class="title_hero">СВЕТОДИЗАЙН ДЛЯ ПУБЛИЧНЫХ ПРОСТРАНСТВ</h1>
+          <p class="subtitle_hero">
+            Делаем проект освещения публичных пространств с расчетом освещения,
+            сценариями и подбором оборудования
+          </p>
+          <div class="background_btn">
+            <div class="front_background">
+              <div class="btn_to_consultation">
+                <a href="http://127.0.0.1:5500/consultation.html">Хочу консультацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_hero">
+          <img src="./Mood Moon_files/main-img.png" alt="main-img">
+        </div>
+      </section>
+
+      <section class="lighting-design">.title</section>
+    </main>
+    <script src="./Mood Moon_files/home_script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
