@@ -3,9 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/consultation.css" />
     <title>Document</title>
   </head>
   <body>
-    <h2>Hello world</h2>
+    <section class="form-for-consultation">
+      <div class="close-form">
+        <p><a href="#">Закрыть</a></p>
+      </div>
+      <div class="title-form">
+        <h2>Получить консультацию по свету</h2>
+        <p>
+          Мы с радостью обсудим ваши идеи и пожелания, дадим обратную связь в
+          течение 2 часов.
+        </p>
+      </div>
+      <form action="" class="form-to-send">
+        <div class="name-and-phone">
+          <div class="field-name">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ваше имя*"
+              required
+            />
+          </div>
+          <div class="field-number">
+            <input
+              id="phone-number"
+              type="tel"
+              name="phone"
+              inputmode="tel"
+              placeholder="Введите номер телефона*"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="field-messaga">
+          <textarea id="message" placeholder="Сообщение.." required></textarea>
+        </div>
+        <div class="btn-to-send-consultation">
+          <button id="to-send" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

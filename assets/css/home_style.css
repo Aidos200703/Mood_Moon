@@ -43,7 +43,7 @@ header {
 
 html.menu_open,
 body.menu_open {
-  overflow: hidden;
+  overflow: visible;
   height: 100%;
 }
 
@@ -190,6 +190,145 @@ body.menu_open {
 }
 
 /* HEADER END */
+
+/* Form START */
+
+/* .bg-consultation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 1);
+} */
+
+.form-for-consultation {
+  display: none;
+}
+
+.form-for-consultation.active {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 135px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1001;
+  padding-top: 40px;
+}
+
+.content-consultation {
+  margin: 0 auto;
+}
+
+.close-form {
+  padding-bottom: 24px;
+}
+
+.close-form p {
+  text-align: end;
+  margin-right: -96px;
+  font-size: 18px;
+}
+
+.close-form p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title-form {
+  max-width: 570px;
+  padding-bottom: 32px;
+}
+
+.title-form h2 {
+  font-family: "Inter-Medium";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.title-form p {
+  flex-wrap: wrap;
+  font-family: "Inter-Medium";
+  font-weight: 500;
+  color: rgba(208, 206, 206, 1);
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.form-to-send {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.name-and-phone {
+  display: flex;
+  gap: 20px;
+}
+
+.field-name,
+.field-number {
+  flex: 1;
+}
+
+.field-name input,
+.field-number input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(22, 22, 22, 1);
+  border: 0.5px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  padding: 28px 28px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.field-messaga textarea {
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 1);
+  border: 0.5px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  padding: 28px 28px;
+  height: 145px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-to-send-consultation button {
+  width: 100%;
+  padding: 24px 0px;
+  background-color: rgba(48, 111, 219, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  font-size: 24px;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-to-send-consultation button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+.btn-to-send-consultation p {
+  padding-top: 12px;
+  font-family: "Inter-Medium";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form END */
 
 /* MAIN HERO START */
 
@@ -1002,6 +1141,107 @@ hr {
   }
 
   /* HEADER END */
+
+  /* Consultation START */
+
+  .form-for-consultation.active {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0px 16px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1001;
+    padding-top: 40px;
+  }
+  .close-form p {
+    margin-right: 0px;
+  }
+
+  .title-form {
+    max-width: 328px;
+    padding-bottom: 24px;
+  }
+
+  .title-form h2 {
+    max-width: 220px;
+    font-family: "Inter-Medium";
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+  }
+
+  .title-form p {
+    flex-wrap: wrap;
+    font-family: "Inter-Medium";
+    font-weight: 500;
+    color: rgba(208, 206, 206, 1);
+    font-size: 18px;
+    max-width: 328px;
+  }
+
+  .form-to-send {
+    gap: 12px;
+  }
+  .name-and-phone {
+    gap: 12px;
+  }
+  .name-and-phone {
+    flex-direction: column;
+  }
+
+  .field-name input,
+  .field-number input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(22, 22, 22, 1);
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    padding: 15px 24px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .field-messaga textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 1);
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 15px 24px;
+    height: 145px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .btn-to-send-consultation button {
+    width: 100%;
+    padding: 24px 0px;
+    background-color: rgba(48, 111, 219, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .btn-to-send-consultation p {
+    padding-top: 12px;
+    font-family: "Inter-Medium";
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Consultation END */
 
   /* HERO STAR */
 
