@@ -60,6 +60,61 @@
       </div>
     </header>
 
+    <div class="bg-consultation"></div>
+
+    <section id="form-for-consultation" class="form-for-consultation">
+      <div class="content-consultation">
+        <div class="close-form">
+          <p><a href="#" onclick="exitConsultation()">Закрыть</a></p>
+        </div>
+        <div class="title-form">
+          <h2>Получить консультацию по свету</h2>
+          <p>
+            Мы с радостью обсудим ваши идеи и пожелания, дадим обратную связь в
+            течение 2 часов.
+          </p>
+        </div>
+        <form action="" class="form-to-send">
+          <div class="name-and-phone">
+            <div class="field-name">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя*"
+                required
+              />
+            </div>
+            <div class="field-number">
+              <input
+                id="phone-number"
+                type="tel"
+                name="phone"
+                inputmode="tel"
+                placeholder="Введите номер телефона*"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field-messaga">
+            <textarea
+              id="message"
+              placeholder="Сообщение.."
+              required
+            ></textarea>
+          </div>
+          <div class="btn-to-send-consultation">
+            <button id="to-send" type="submit">Отправить</button>
+            <p>
+              Нажимая на кнопку «Отправить», вы соглашаетесь с условиями нашей
+              политики конфиденциальности*
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <main>
       <section class="hero">
         <div class="left_hero">
@@ -71,7 +126,7 @@
           <div class="background_btn">
             <div class="front_background">
               <div class="btn_to_consultation">
-                <a href="consultation.html">Хочу консультацию</a>
+                <a href="#" onclick="toConsultation()">Хочу консультацию</a>
               </div>
             </div>
           </div>
@@ -350,7 +405,7 @@
               <div class="background_btn">
                 <div class="front_background">
                   <div class="btn_to_consultation">
-                    <a href="consultation.html">Хочу консультацию</a>
+                    <a href="#" onclick="toConsultation()">Хочу консультацию</a>
                   </div>
                 </div>
               </div>
@@ -474,7 +529,7 @@
             <div class="background_btn btn-schemes-for-laptop">
               <div class="front_background">
                 <div class="btn_to_consultation">
-                  <a href="consultation.html">Хочу консультацию</a>
+                  <a href="#" onclick="toConsultation()">Хочу консультацию</a>
                 </div>
               </div>
             </div>
@@ -497,13 +552,6 @@
                 alt=""
               />
               <h3>Спецификации и оборудование</h3>
-            </div>
-          </div>
-          <div class="background_btn btn-schemes-for-mobile">
-            <div class="front_background">
-              <div class="btn_to_consultation">
-                <a href="consultation.html">Хочу консультацию</a>
-              </div>
             </div>
           </div>
         </div>
@@ -575,5 +623,6 @@
     ></script>
 
     <script src="./assets/js/home_script.js"></script>
+    <script src="./assets/js/modal_script.js"></script>
   </body>
 </html>
