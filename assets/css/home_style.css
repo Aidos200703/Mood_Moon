@@ -43,7 +43,7 @@ header {
 
 html.menu_open,
 body.menu_open {
-  overflow: visible;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -193,16 +193,6 @@ body.menu_open {
 
 /* Form START */
 
-/* .bg-consultation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  background: rgba(0, 0, 0, 1);
-} */
-
 .form-for-consultation {
   display: none;
 }
@@ -218,7 +208,7 @@ body.menu_open {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100%;
+  height: 100vh;
   z-index: 1001;
   padding-top: 40px;
 }
@@ -1027,6 +1017,10 @@ hr {
     overflow-x: hidden;
   }
 
+  body.menu_open {
+    overflow-y: hidden;
+  }
+
   /* HEADER START */
 
   .logo {
@@ -1157,7 +1151,7 @@ hr {
     bottom: 0;
     height: 100%;
     z-index: 1001;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .close-form p {
     margin-right: 0px;
