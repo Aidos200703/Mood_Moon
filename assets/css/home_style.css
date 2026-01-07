@@ -1447,7 +1447,6 @@ hr {
   .content-cost {
     display: block;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     gap: 0px;
   }
 
@@ -1624,8 +1623,6 @@ hr {
 
   /* schemes START */
 
-  /* schemes END */
-
   .btn-schemes-for-mobile {
     display: block;
   }
@@ -1678,6 +1675,8 @@ hr {
     font-size: 16px;
     width: 100%;
   }
+
+  /* schemes END */
 
   /* FOOTER START */
 
